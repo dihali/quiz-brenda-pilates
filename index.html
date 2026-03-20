@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Brenda Di-Hali | Aula Experimental Gratuita</title>
+    <meta name="description" content="Descubra se o Pilates pode transformar sua vida. Responda 6 perguntas e garanta sua aula experimental gratuita no Studio Brenda Di-Hali em Ituiutaba-MG.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1985932372280352');
+        fbq('track', 'PageView');
+    </script>
+
+    <style>
+        :root {
+            --gold: #C5A059;
+            --gold-light: #F0E6D0;
+            --gold-dark: #A8863D;
+            --cream: #FAF8F4;
+            --dark: #2D2520;
+            --text: #3D2D25;
+            --text-soft: #8B7060;
+            --white: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        .quiz-header {
+            background: var(--dark);
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quiz-header img {
+            height: 48px;
+            width: auto;
+        }
+
+        /* HERO INTRO */
+        .intro {
+            background: linear-gradient(135deg, var(--dark) 0%, #4A3528 100%);
+            padding: 60px 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .intro::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://i.ibb.co/Wvkfx13y/brenda-di-hali-studio-de-pilates-ituiutaba-minas-gerais.jpg') center/cover;
+            opacity: 0.15;
+        }
+
+        .intro-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .intro-tag {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            padding: 6px 20px;
+            border-radius: 100px;
+            margin-bottom: 24px;
+        }
+
+        .intro h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            color: var(--white);
+            line-height: 1.15;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .intro h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .intro p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.7;
+            margin-bottom: 32px;
+            font-weight: 300;
+        }
+
+        .intro-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            border: 3px solid var(--gold);
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .intro-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .intro-title {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 32px;
+        }
+
+        .btn-start {
+            background: var(--gold);
+            color: var(--dark);
+            padding: 18px 48px;
+            border-radius: 100px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s;
+            letter-spacing: 0.05em;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-start:hover {
+            background: #D4B46E;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(197, 160, 89, 0.4);
+        }
+
+        .intro-trust {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.6);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* QUIZ CONTAINER */
+        .quiz-container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        /* PROGRESS */
+        .progress-wrap {
+            margin-bottom: 40px;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .progress-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-soft);
+            font-weight: 600;
+        }
+
+        .progress-num {
+            font-size: 0.72rem;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: rgba(197, 160, 89, 0.2);
+            border-radius: 100px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gold);
+            border-radius: 100px;
+            transition: width 0.5s ease;
+        }
+
+        /* STEP */
+        .step {
+            display: none;
+            animation: stepIn 0.4s ease forwards;
+        }
+
+        .step.active { display: block; }
+
+        @keyframes stepIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .step-question {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            color: var(--text);
+            line-height: 1.3;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .step-sub {
+            font-size: 0.85rem;
+            color: var(--text-soft);
+            margin-bottom: 32px;
+            font-weight: 300;
+        }
+
+        /* OPTIONS */
+        .options-grid {
+            display: grid;
+            gap: 12px;
+        }
+
+        .options-grid.cols-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .option-btn {
+            background: var(--white);
+            border: 2px solid rgba(197, 160, 89, 0.2);
+            border-radius: 16px;
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: all 0.25s;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+        }
+
+        .option-btn:hover {
+            border-color: var(--gold);
+            background: var(--gold-light);
+            transform: translateX(4px);
+        }
+
+        .option-btn.selected {
+            border-color: var(--gold);
+            background: var(--gold-light);
+            box-shadow: 0 4px 16px rgba(197, 160, 89, 0.2);
+        }
+
+        .option-emoji {
+            font-size: 1.6rem;
+            flex-shrink: 0;
+            width: 40px;
+            text-align: center;
+        }
+
+        .option-text {
+            font-size: 0.92rem;
+            color: var(--text);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .option-sub {
+            font-size: 0.75rem;
+            color: var(--text-soft);
+            font-weight: 300;
+            margin-top: 2px;
+        }
+
+        .option-check {
+            margin-left: auto;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2px solid rgba(197, 160, 89, 0.3);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .option-btn.selected .option-check {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: white;
+            font-size: 0.7rem;
+        }
+
+        /* CAPTURE FORM */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-soft);
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid rgba(197, 160, 89, 0.2);
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            background: var(--white);
+            transition: border-color 0.2s;
+            outline: none;
+        }
+
+        .form-input:focus { border-color: var(--gold); }
+        .form-input::placeholder { color: #bbb; }
+
+        .form-privacy {
+            font-size: 0.72rem;
+            color: var(--text-soft);
+            margin-top: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* NEXT BUTTON */
+        .btn-next {
+            width: 100%;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 18px;
+            border-radius: 100px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s;
+            margin-top: 24px;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-next:hover {
+            background: #D4B46E;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(197, 160, 89, 0.3);
+        }
+
+        .btn-next:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* RESULTADO */
+        .resultado {
+            display: none;
+            text-align: center;
+            padding: 48px 24px 80px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .resultado.active { display: block; }
+
+        .confetti-wrap {
+            font-size: 3rem;
+            margin-bottom: 8px;
+            animation: bounce 0.6s ease;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-16px); }
+        }
+
+        .resultado-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            padding: 6px 20px;
+            border-radius: 100px;
+            margin-bottom: 24px;
+        }
+
+        .resultado h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--text);
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .resultado h2 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .resultado-card {
+            background: var(--white);
+            border: 2px solid rgba(197, 160, 89, 0.2);
+            border-radius: 24px;
+            padding: 32px;
+            margin: 32px 0;
+            text-align: left;
+        }
+
+        .resultado-card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        .resultado-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px dashed rgba(197, 160, 89, 0.2);
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .resultado-item:last-child { border-bottom: none; }
+
+        .resultado-item-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .resultado-msg {
+            background: linear-gradient(135deg, var(--dark) 0%, #4A3528 100%);
+            border-radius: 20px;
+            padding: 28px;
+            margin: 24px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .resultado-msg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://i.ibb.co/RGdF72q1/Whats-App-Image-2026-02-22-at-16-25-22-4.jpg') center/cover;
+            opacity: 0.1;
+        }
+
+        .resultado-msg-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .resultado-msg p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .resultado-msg strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .btn-agendar {
+            display: block;
+            width: 100%;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 20px;
+            border-radius: 100px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        .btn-agendar:hover {
+            background: #D4B46E;
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px rgba(197, 160, 89, 0.4);
+        }
+
+        .resultado-urgency {
+            font-size: 0.78rem;
+            color: var(--text-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* CONFETTI JS */
+        .confetti-piece {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            animation: confettiFall linear forwards;
+            z-index: 999;
+            pointer-events: none;
+        }
+
+        @keyframes confettiFall {
+            0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+
+        /* FOOTER */
+        .quiz-footer {
+            background: var(--dark);
+            padding: 24px;
+            text-align: center;
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.3);
+        }
+
+        /* MOBILE */
+        @media (max-width: 480px) {
+            .options-grid.cols-2 { grid-template-columns: 1fr; }
+            .intro h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="quiz-header">
+        <img src="https://i.ibb.co/QSSg0dz/Brown-Modern-Coffee-Shop-Logo-4.png" alt="Studio Brenda Di-Hali">
+    </div>
+
+    <!-- INTRO -->
+    <div class="intro" id="introSection">
+        <div class="intro-inner">
+            <div class="intro-tag">✦ Aula Experimental 100% Gratuita</div>
+            <h1>O Pilates pode <em>transformar</em> sua vida?</h1>
+            <p>Responda 6 perguntas rápidas e descubra como o método personalizado da Brenda pode aliviar suas dores e devolver sua qualidade de vida.</p>
+            <img src="https://i.ibb.co/RGdF72q1/Whats-App-Image-2026-02-22-at-16-25-22-4.jpg" alt="Brenda Di-Hali" class="intro-photo">
+            <div class="intro-name">Brenda Di-Hali</div>
+            <div class="intro-title">Instrutora de Pilates · Ituiutaba-MG</div>
+            <button class="btn-start" onclick="startQuiz()">
+                Descobrir agora ✦
+            </button>
+            <div class="intro-trust">
+                <div class="trust-item">⏱️ Apenas 2 minutos</div>
+                <div class="trust-item">🔒 Seus dados são protegidos</div>
+                <div class="trust-item">🎁 100% gratuito</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div class="quiz-container" id="quizSection" style="display:none">
+
+        <!-- PROGRESS -->
+        <div class="progress-wrap">
+            <div class="progress-info">
+                <span class="progress-label">Seu progresso</span>
+                <span class="progress-num" id="progressNum">Pergunta 1 de 6</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 16%"></div>
+            </div>
+        </div>
+
+        <!-- STEP 1 — OBJETIVO -->
+        <div class="step active" id="step1">
+            <div class="step-question">Qual é o seu principal objetivo com o Pilates?</div>
+            <div class="step-sub">Escolha a opção que mais combina com você</div>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(this, 'objetivo', 'Aliviar dores e desconfortos')">
+                    <span class="option-emoji">😣</span>
+                    <div>
+                        <div class="option-text">Aliviar dores e desconfortos</div>
+                        <div class="option-sub">Coluna, articulações, tensões</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'objetivo', 'Melhorar mobilidade e flexibilidade')">
+                    <span class="option-emoji">🧘</span>
+                    <div>
+                        <div class="option-text">Melhorar mobilidade e flexibilidade</div>
+                        <div class="option-sub">Movimento mais livre</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'objetivo', 'Fortalecer o corpo')">
+                    <span class="option-emoji">💪</span>
+                    <div>
+                        <div class="option-text">Fortalecer o corpo</div>
+                        <div class="option-sub">Musculatura e postura</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'objetivo', 'Pilates na gestação')">
+                    <span class="option-emoji">🤰</span>
+                    <div>
+                        <div class="option-text">Pilates na gestação</div>
+                        <div class="option-sub">Gravidez mais saudável</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'objetivo', 'Qualidade de vida e bem-estar')">
+                    <span class="option-emoji">✨</span>
+                    <div>
+                        <div class="option-text">Qualidade de vida e bem-estar</div>
+                        <div class="option-sub">Saúde física e mental</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+            </div>
+            <button class="btn-next" id="next1" disabled onclick="nextStep(1, 2)">Próximo →</button>
+        </div>
+
+        <!-- STEP 2 — REGIÃO DA DOR -->
+        <div class="step" id="step2">
+            <div class="step-question">Você sente desconforto em qual região?</div>
+            <div class="step-sub">Pode ser mais de uma — escolha a principal</div>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(this, 'regiao', 'coluna lombar (parte baixa das costas)')">
+                    <span class="option-emoji">🔴</span>
+                    <div>
+                        <div class="option-text">Coluna lombar</div>
+                        <div class="option-sub">Parte baixa das costas</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'regiao', 'coluna cervical (pescoço e nuca)')">
+                    <span class="option-emoji">🔴</span>
+                    <div>
+                        <div class="option-text">Coluna cervical</div>
+                        <div class="option-sub">Pescoço e nuca</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'regiao', 'ombros e braços')">
+                    <span class="option-emoji">🔴</span>
+                    <div>
+                        <div class="option-text">Ombros e braços</div>
+                        <div class="option-sub">Tensão e dor muscular</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'regiao', 'quadril e glúteos')">
+                    <span class="option-emoji">🔴</span>
+                    <div>
+                        <div class="option-text">Quadril e glúteos</div>
+                        <div class="option-sub">Dor ao sentar ou caminhar</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'regiao', 'joelhos e pernas')">
+                    <span class="option-emoji">🔴</span>
+                    <div>
+                        <div class="option-text">Joelhos e pernas</div>
+                        <div class="option-sub">Dor ao subir escadas</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'regiao', 'mais de uma região')">
+                    <span class="option-emoji">🔴</span>
+                    <div>
+                        <div class="option-text">Mais de uma região</div>
+                        <div class="option-sub">Dores generalizadas</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+            </div>
+            <button class="btn-next" id="next2" disabled onclick="nextStep(2, 3)">Próximo →</button>
+        </div>
+
+        <!-- STEP 3 — SEXO -->
+        <div class="step" id="step3">
+            <div class="step-question">Qual é o seu sexo?</div>
+            <div class="step-sub">Para personalizarmos ainda mais o seu programa</div>
+            <div class="options-grid cols-2">
+                <button class="option-btn" onclick="selectOption(this, 'sexo', 'Feminino')">
+                    <span class="option-emoji">👩</span>
+                    <div><div class="option-text">Feminino</div></div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'sexo', 'Masculino')">
+                    <span class="option-emoji">👨</span>
+                    <div><div class="option-text">Masculino</div></div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" style="grid-column: span 2" onclick="selectOption(this, 'sexo', 'Prefiro não informar')">
+                    <span class="option-emoji">🙂</span>
+                    <div><div class="option-text">Prefiro não informar</div></div>
+                    <div class="option-check"></div>
+                </button>
+            </div>
+            <button class="btn-next" id="next3" disabled onclick="nextStep(3, 4)">Próximo →</button>
+        </div>
+
+        <!-- STEP 4 — IDADE -->
+        <div class="step" id="step4">
+            <div class="step-question">Qual é a sua faixa etária?</div>
+            <div class="step-sub">Cada fase da vida tem um programa ideal</div>
+            <div class="options-grid cols-2">
+                <button class="option-btn" onclick="selectOption(this, 'idade', '18 a 29 anos')">
+                    <span class="option-emoji">🌱</span>
+                    <div><div class="option-text">18 a 29 anos</div></div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'idade', '30 a 45 anos')">
+                    <span class="option-emoji">🌿</span>
+                    <div><div class="option-text">30 a 45 anos</div></div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'idade', '46 a 60 anos')">
+                    <span class="option-emoji">🌳</span>
+                    <div><div class="option-text">46 a 60 anos</div></div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'idade', 'Acima de 60 anos')">
+                    <span class="option-emoji">🏆</span>
+                    <div><div class="option-text">Acima de 60 anos</div></div>
+                    <div class="option-check"></div>
+                </button>
+            </div>
+            <button class="btn-next" id="next4" disabled onclick="nextStep(4, 5)">Próximo →</button>
+        </div>
+
+        <!-- STEP 5 — HORÁRIO -->
+        <div class="step" id="step5">
+            <div class="step-question">Qual horário seria ideal para suas aulas?</div>
+            <div class="step-sub">Para reservarmos a vaga certa pra você</div>
+            <div class="options-grid">
+                <button class="option-btn" onclick="selectOption(this, 'horario', 'Manhã (06h às 12h)')">
+                    <span class="option-emoji">🌅</span>
+                    <div>
+                        <div class="option-text">Manhã</div>
+                        <div class="option-sub">06h às 12h</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'horario', 'Tarde (12h às 18h)')">
+                    <span class="option-emoji">☀️</span>
+                    <div>
+                        <div class="option-text">Tarde</div>
+                        <div class="option-sub">12h às 18h</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+                <button class="option-btn" onclick="selectOption(this, 'horario', 'Noite (18h às 20h)')">
+                    <span class="option-emoji">🌙</span>
+                    <div>
+                        <div class="option-text">Noite</div>
+                        <div class="option-sub">18h às 20h</div>
+                    </div>
+                    <div class="option-check"></div>
+                </button>
+            </div>
+            <button class="btn-next" id="next5" disabled onclick="nextStep(5, 6)">Próximo →</button>
+        </div>
+
+        <!-- STEP 6 — CAPTURA -->
+        <div class="step" id="step6">
+            <div class="step-question">Falta só um passo! 🎉</div>
+            <div class="step-sub">Preencha seus dados para garantir sua vaga gratuita</div>
+            <div class="form-group">
+                <label class="form-label">Seu nome completo</label>
+                <input type="text" class="form-input" id="inputNome" placeholder="Ex: Maria Silva" oninput="checkForm()">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Seu WhatsApp</label>
+                <input type="tel" class="form-input" id="inputWhatsapp" placeholder="(34) 99999-9999" oninput="checkForm()">
+            </div>
+            <p class="form-privacy">🔒 Seus dados são protegidos e nunca serão compartilhados com terceiros.</p>
+            <button class="btn-next" id="next6" disabled onclick="showResultado()">
+                Garantir minha vaga gratuita ✦
+            </button>
+        </div>
+
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="resultado" id="resultadoSection">
+        <div class="confetti-wrap">🎉🎊🥳</div>
+        <div class="resultado-badge">✦ Parabéns!</div>
+        <h2>Você acaba de <em>garantir</em> sua aula experimental gratuita!</h2>
+
+        <div class="resultado-card">
+            <div class="resultado-card-title">✦ Seu programa personalizado</div>
+            <div class="resultado-item">
+                <div class="resultado-item-icon">🎯</div>
+                <div>
+                    <strong>Objetivo:</strong> <span id="res-objetivo"></span>
+                </div>
+            </div>
+            <div class="resultado-item">
+                <div class="resultado-item-icon">📍</div>
+                <div>
+                    <strong>Foco:</strong> Alívio da dor na <span id="res-regiao"></span>
+                </div>
+            </div>
+            <div class="resultado-item">
+                <div class="resultado-item-icon">🕐</div>
+                <div>
+                    <strong>Horário preferido:</strong> <span id="res-horario"></span>
+                </div>
+            </div>
+            <div class="resultado-item">
+                <div class="resultado-item-icon">✅</div>
+                <div>
+                    <strong>Valor:</strong> <span style="color: var(--gold); font-weight: 700;">100% GRATUITO</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="resultado-msg">
+            <div class="resultado-msg-inner">
+                <p id="res-mensagem"></p>
+            </div>
+        </div>
+
+        <a href="#" id="btnAgendar" class="btn-agendar">
+            💬 Agendar minha aula agora →
+        </a>
+
+        <div class="resultado-urgency">
+            ⚡ Vagas limitadas — Responderemos em até 24 horas
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="quiz-footer">
+        © 2025 Studio Brenda Di-Hali · Ituiutaba-MG · Todos os direitos reservados
+    </div>
+
+    <script>
+        const answers = {
+            objetivo: '',
+            regiao: '',
+            sexo: '',
+            idade: '',
+            horario: '',
+            nome: '',
+            whatsapp: ''
+        };
+
+        function startQuiz() {
+            document.getElementById('introSection').style.display = 'none';
+            document.getElementById('quizSection').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function selectOption(btn, field, value) {
+            const parent = btn.closest('.options-grid');
+            parent.querySelectorAll('.option-btn').forEach(b => {
+                b.classList.remove('selected');
+                b.querySelector('.option-check').innerHTML = '';
+            });
+            btn.classList.add('selected');
+            btn.querySelector('.option-check').innerHTML = '✓';
+            answers[field] = value;
+
+            const stepNum = btn.closest('.step').id.replace('step', '');
+            const nextBtn = document.getElementById('next' + stepNum);
+            if (nextBtn) nextBtn.disabled = false;
+
+            // Auto avança em 0.4s
+            setTimeout(() => {
+                if (nextBtn) nextBtn.click();
+            }, 400);
+        }
+
+        function nextStep(current, next) {
+            document.getElementById('step' + current).classList.remove('active');
+            document.getElementById('step' + next).classList.add('active');
+            updateProgress(next);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function updateProgress(step) {
+            const pct = (step / 6) * 100;
+            document.getElementById('progressFill').style.width = pct + '%';
+            document.getElementById('progressNum').textContent = 'Pergunta ' + step + ' de 6';
+        }
+
+        function checkForm() {
+            const nome = document.getElementById('inputNome').value.trim();
+            const zap = document.getElementById('inputWhatsapp').value.trim();
+            document.getElementById('next6').disabled = !(nome.length > 2 && zap.length > 8);
+        }
+
+        function showResultado() {
+            answers.nome = document.getElementById('inputNome').value.trim();
+            answers.whatsapp = document.getElementById('inputWhatsapp').value.trim();
+
+            // Dispara evento Lead no pixel
+            if (window.fbq) {
+                fbq('track', 'Lead', {
+                    content_name: 'Quiz Brenda Pilates',
+                    content_category: answers.objetivo,
+                });
+            }
+
+            // Preenche resultado
+            document.getElementById('res-objetivo').textContent = answers.objetivo;
+            document.getElementById('res-regiao').textContent = answers.regiao;
+            document.getElementById('res-horario').textContent = answers.horario;
+
+            const primeiroNome = answers.nome.split(' ')[0];
+            document.getElementById('res-mensagem').innerHTML =
+                `<strong>${primeiroNome}</strong>, com base nas suas respostas, preparamos um método especial focado em aliviar sua dor na <strong>${answers.regiao}</strong>. A Brenda vai te atender com um programa 100% personalizado pra você. Nossa equipe vai entrar em contato no seu WhatsApp em breve — mas se quiser, pode chamar agora mesmo! 💛`;
+
+            const msg = encodeURIComponent(
+                `Olá Brenda! 👋 Acabei de fazer o quiz no seu site!\n\n` +
+                `Meu nome é ${answers.nome}\n` +
+                `Objetivo: ${answers.objetivo}\n` +
+                `Região com dor: ${answers.regiao}\n` +
+                `Horário preferido: ${answers.horario}\n\n` +
+                `Quero agendar minha aula experimental gratuita! 🎉`
+            );
+
+            document.getElementById('btnAgendar').href =
+                `https://wa.me/5534996623620?text=${msg}`;
+
+            document.getElementById('quizSection').style.display = 'none';
+            document.getElementById('resultadoSection').classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            launchConfetti();
+        }
+
+        function launchConfetti() {
+            const colors = ['#C5A059', '#F0E6D0', '#2D2520', '#fff', '#E8C4C0'];
+            for (let i = 0; i < 80; i++) {
+                setTimeout(() => {
+                    const piece = document.createElement('div');
+                    piece.className = 'confetti-piece';
+                    piece.style.left = Math.random() * 100 + 'vw';
+                    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+                    piece.style.width = (Math.random() * 8 + 6) + 'px';
+                    piece.style.height = (Math.random() * 8 + 6) + 'px';
+                    piece.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                    piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                    document.body.appendChild(piece);
+                    setTimeout(() => piece.remove(), 4000);
+                }, i * 30);
+            }
+        }
+    </script>
+
+</body>
+</html>
